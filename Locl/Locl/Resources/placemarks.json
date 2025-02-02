@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "name": "Eiland",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.992279,
+      "longitude": -96.727402
+    }
+  },
+  {
+    "id": 2,
+    "name": "1418",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 33.019252,
+      "longitude": -96.699074
+    }
+  },
+  {
+    "id": 3,
+    "name": "WhiteRock",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.865880089999074,
+      "longitude": -96.71243769285515
+    }
+  },
+  {
+    "id": 4,
+    "name": "Pax & Beneficia Coffee",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 33.009307030489346,
+      "longitude": -96.71705538543983
+    }
+  },
+  {
+    "id": 5,
+    "name": "Buzz & Bustle Coffee House & Shop",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.8602587178809,
+      "longitude": -96.76400473262166
+    }
+  },
+  {
+    "id": 6,
+    "name": "Halcyon",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 34.603766683458446,
+      "longitude": -96.7759904492943
+    }
+  },
+  {
+    "id": 7,
+    "name": "J. Erik Jonsson Central Library",
+    "spotType": 1,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.778803,
+      "longitude": -96.796877
+    }
+  },
+  {
+    "id": 8,
+    "name": "Richardson Public Library",
+    "spotType": 1,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.9957935219382,
+      "longitude": -96.70683939192506
+    }
+  },
+  {
+    "id": 9,
+    "name": "Civil Pour Coffee + Beer",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.88495126942286,
+      "longitude": -96.76780564520364
+    }
+  },
+  {
+    "id": 10,
+    "name": "Fretz Park Branch Library",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.94968203710987,
+      "longitude": -96.78313196931552
+    }
+  },
+  {
+    "id": 11,
+    "name": "Communion Coffee Shop",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.95362368333104,
+      "longitude": -96.73562510132261
+    }
+  },
+  {
+    "id": 12,
+    "name": "Rosalind Coffee",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.915299948352605,
+      "longitude": -96.63915140768621
+    }
+  },
+  {
+    "id": 13,
+    "name": "Haraz Coffee House",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 33.01554045042647,
+      "longitude": -96.65082438146686
+    }
+  },
+  {
+    "id": 14,
+    "name": "Wayward Coffee Co",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.798497659819716,
+      "longitude": -96.83003885893044
+    }
+  },
+  {
+    "id": 15,
+    "name": "Ascension Coffee - Design District",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.798223479327774,
+      "longitude": -96.82102539622457
+    }
+  },
+  {
+    "id": 16,
+    "name": "Sweetwaters Coffee & Tea",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 33.003671483353905,
+      "longitude": -96.68559642683087
+    }
+  },
+  {
+    "id": 17,
+    "name": "Lemma Coffee Co",
+    "spotType": 0,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 33.024746140672136,
+      "longitude": -96.70017339094679
+    }
+  },
+  {
+    "id": 18,
+    "name": "Cue: North Dallas",
+    "spotType": 3,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.894427842275725,
+      "longitude": -96.73617841576979
+    }
+  },
+  {
+    "id": 19,
+    "name": "Spryrocket Station",
+    "spotType": 3,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.84467972855793,
+      "longitude": -96.76945195481198
+    }
+  },
+  {
+    "id": 20,
+    "name": "Work214 Coworking & Office Space",
+    "spotType": 3,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.81295917370145,
+      "longitude": -96.79946550396396
+    }
+  },
+  {
+    "id": 21,
+    "name": "Boba Latte",
+    "spotType": 4,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.94985370258121,
+      "longitude": -96.73251250124898
+    }
+  },
+  {
+    "id": 22,
+    "name": "Cafe Brazil - Richardson",
+    "spotType": 5,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.98665851513193,
+      "longitude": -96.71646921991426
+    }
+  },
+  {
+    "id": 23,
+    "name": "Okaeri Cafe",
+    "spotType": 5,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.96156849407403,
+      "longitude": -96.72651979090944
+    }
+  },
+  {
+    "id": 24,
+    "name": "DING TEA GARLAND",
+    "spotType": 4,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.95090929958875,
+      "longitude": -96.67772434001255
+    }
+  },
+  {
+    "id": 25,
+    "name": "Hatchways Workspace",
+    "spotType": 5,
+    "null": null,
+    "description": "lorem ipsum bullshit",
+    "coordinates": {
+      "latitude": 32.796283467409765,
+      "longitude": -96.80987169152561
+    }
+  }
+]
