@@ -7,7 +7,8 @@ import MapKit
 
 struct MapView: View {
     @State private var placeMarks: [ModelPlacemark] = []
-    @State private var selectedItem: MKMapItem?
+    @State private var mapSelection: ModelPlacemark?
+    
     
     private var region: MKCoordinateRegion {
         MKCoordinateRegion(
@@ -18,14 +19,14 @@ struct MapView: View {
 
 
     var body: some View {
-        Map(initialPosition: .region(region), selection: $selectedItem) {
+        Map(initialPosition: .region(region), selection: $mapSelection) {
             // Directly add Markers (no need for a ForEach wrapper)
             ForEach(placeMarks) { placemark in
                 Marker(
                     placemark.name,
                     systemImage: "star",
                     coordinate: placemark.coordinate
-                )
+                ).tag(placemark)
             }
             Annotation("My Location", coordinate: region.center) {
                 ZStack {
@@ -45,6 +46,12 @@ struct MapView: View {
             PlacemarkManager.shared.loadPlacemarks()
             placeMarks = PlacemarkManager.shared.placemarks
         }
+        .onChange(of: mapSelection, { oldValue, newValue in
+            // this is where we put the selection to show the detail view
+            if let name = newValue?.name {
+                print(name)
+            }
+        })
         .mapControls {
             MapCompass()
             MapPitchToggle()
