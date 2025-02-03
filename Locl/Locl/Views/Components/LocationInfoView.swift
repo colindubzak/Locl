@@ -11,6 +11,7 @@ import MapKit
 
 struct LocationInfoView: View {
     var mapSelection: ModelPlacemark?
+    
     @State private var name = ""
     @State private var address = ""
     

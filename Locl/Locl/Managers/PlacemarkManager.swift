@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PlacemarkManager: ObservableObject {
+class PlacemarkManager {
     static let shared = PlacemarkManager()  // Singleton instance - ensures that only one instance of placemarks is shared throughout the app
     var placemarks: [ModelPlacemark] = []
     
