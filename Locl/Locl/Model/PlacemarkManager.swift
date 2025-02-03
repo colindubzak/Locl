@@ -6,28 +6,30 @@
 //
 
 import Foundation
-class PlacemarkManager {
-    static let shared = PlacemarkManager()  // Singleton instance - ensures that only one instance of placemarks is shared throughout the app
-    var placemarks: [ModelPlacemark] = []
-    
+
+// making this jawn an observable object will allow the placemarks to be updated as the
+class PlacemarkManager: ObservableObject{
+    static let shared = PlacemarkManager()
+    @Published var placemarks: [ModelPlacemark] = [] // Now publishes changes
+
     private init() {}  // Prevent initialization from outside
     
     func loadPlacemarks() {
-        if let url = Bundle.main.url(forResource: "placemarks", withExtension: "json") {
-            if let data = try? Data(contentsOf: url) {
+        DispatchQueue.global(qos: .background).async { // Load off the main thread
+            if let url = Bundle.main.url(forResource: "placemarks", withExtension: "json") {
                 do {
+                    let data = try Data(contentsOf: url)
                     let decoder = JSONDecoder()
-                    placemarks = try decoder.decode([ModelPlacemark].self, from: data)
-                    print("Successfully decoded \(placemarks.count) placemarks.")
-                   
+                    let decodedPlacemarks = try decoder.decode([ModelPlacemark].self, from: data)
+                    
+                    DispatchQueue.main.async { // Update UI on main thread
+                        self.placemarks = decodedPlacemarks
+                        print("Loaded \(decodedPlacemarks.count) placemarks.")
+                    }
                 } catch {
-                    print("Failed to decode JSON: \(error)")
+                    print("Error: \(error)")
                 }
-            } else {
-                print("Failed to load data from JSON file.")
             }
-        } else {
-            print("Could not find placemarks.json in the app bundle.")
         }
     }
 }

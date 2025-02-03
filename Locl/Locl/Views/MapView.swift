@@ -6,9 +6,9 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    @State private var placeMarks: [ModelPlacemark] = []
+//    @State private var placeMarks: [ModelPlacemark] = []
     @State private var mapSelection: ModelPlacemark?
-    
+    @ObservedObject var placemarkManager = PlacemarkManager.shared
     
     private var region: MKCoordinateRegion {
         MKCoordinateRegion(
@@ -21,7 +21,7 @@ struct MapView: View {
     var body: some View {
         Map(initialPosition: .region(region), selection: $mapSelection) {
             // Directly add Markers (no need for a ForEach wrapper)
-            ForEach(placeMarks) { placemark in
+            ForEach(placemarkManager.placemarks) { placemark in
                 Marker(
                     placemark.name,
                     systemImage: "star",
@@ -43,8 +43,8 @@ struct MapView: View {
             }
         }
         .onAppear {
-            PlacemarkManager.shared.loadPlacemarks()
-            placeMarks = PlacemarkManager.shared.placemarks
+            placemarkManager.loadPlacemarks()
+                
         }
         .onChange(of: mapSelection, { oldValue, newValue in
             // this is where we put the selection to show the detail view
